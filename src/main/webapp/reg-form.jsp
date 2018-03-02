@@ -100,7 +100,7 @@
                 }else if(${sessionScope.languageStatus eq '0'}){
                     alert("Two password input is not consistent!")
                 }else{
-                    alert("Zwei passwort.")
+                    alert("Zwei passwort- eingabe passen nicht!.")
                 }
             }
             //验证邮箱格式
