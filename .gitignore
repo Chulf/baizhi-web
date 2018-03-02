@@ -2,4 +2,4 @@
 .project
 .settings/
 target/
-src/**/jdbc.properties
+/src/main/resources/com/baizhi/properties/jdbc.properties
