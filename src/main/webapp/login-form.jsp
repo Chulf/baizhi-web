@@ -81,9 +81,9 @@
                     if(${sessionScope.languageStatus eq '1'}){
                         alert("登录失败!");
                     }else if(${sessionScope.languageStatus eq '0'}){
-                        alert("Log failure!")
+                        alert("Login failed!")
                     }else{
-                        alert("Sie scheitern")
+                        alert("Anmeldung fehlgeschlagen.")
                     }
                 }
             }

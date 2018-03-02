@@ -137,11 +137,11 @@
                     success: function (result) {
                         if (result) {
                             if(${sessionScope.languageStatus eq '1'}){
-                                alert("该用户名已被注册！");
+                                alert("该用户名已被注册,请换另一个用户名！");
                             }else if(${sessionScope.languageStatus eq '0'}){
-                                alert("The username has been registered!")
+                                alert("The username is already registere,please choose another one!")
                             }else{
-                                alert("Der benutzername registriert Worden.")
+                                alert("Der benutzername ist bereits registriert,bitte wählen einen anderen aus.")
                             }
                         } else {
                             if (ok1 && ok2 && ok3 && ok4&&ok5) {
