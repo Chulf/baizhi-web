@@ -148,8 +148,8 @@ public class BaiZhiOrderController {
         String statu = (String) session.getAttribute("languageStatus");
         if ("1".equals(statu)) return "订单已经成功生成，稍后我们会有工作人员和您联系进一步沟通关于软件预定的情况！";
         else if ("2".equals(statu))
-            return "Bestellungen sind erfolgreich erzeugt, auf die WIR später wird personal und " +
-                    "Kontakt MIT Ihnen die weitere Kommunikation über die software vorgegebenen Situation!";
+            return "Bestellungen sind erfolgreich erzeugt, auf die wir später wird personal und " +
+                    "Kontakt mit Ihnen die weitere Kommunikation über die software vorgegebenen Situation!";
         return "The order has been successfully generated, and later we will have the staff to contact you " +
                 "to further communicate about the software reservation";
     }

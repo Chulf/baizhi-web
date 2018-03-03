@@ -26,8 +26,7 @@
                             test="${sessionScope.languageStatus eq '1'}">${requestScope.contents[0]}
                         </c:if>
                         <c:if
-                            test="${sessionScope.languageStatus eq '0'|| sessionScope.languageStatus == null}">
-                            ${requestScope.contents[0]}
+                            test="${sessionScope.languageStatus eq '0'}">${requestScope.contents[0]}
                         </c:if>
                         <c:if
                             test="${sessionScope.languageStatus eq '2'}">${requestScope.contents[0]}
