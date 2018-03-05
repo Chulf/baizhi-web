@@ -145,7 +145,20 @@
                             }
                         } else {
                             if (ok1 && ok2 && ok3 && ok4&&ok5) {
-                                $("#reg").submit();
+                            	$.ajax({
+                            		url:'${pageContext.request.contextPath}/user/reg.do',
+                            		type:"post",
+                            		data:$("#reg").serialize(),
+                            		success:function(data){
+                            			$('#reg-modal').modal('hide');
+                            			location.reload();
+                            			
+                            		}
+                            		
+                            	})
+                            	
+                            	
+                                //$("#reg").submit();
                             }
                         }
                     }
@@ -160,7 +173,7 @@
                             alert("您的操作过于频繁！");
                         } else {
                             if (ok1 && ok2 && ok3 && ok4&&ok5) {
-                                $("#reg").submit();
+                               // $("#reg").submit();
                             }
                         }
                     }

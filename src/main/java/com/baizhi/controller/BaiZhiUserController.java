@@ -102,11 +102,12 @@ public class BaiZhiUserController {
     }
 
     @RequestMapping("reg")
+    @ResponseBody
     public String reg(HttpSession session, BaiZhiUser user) {
         BaiZhiUser reg = service.reg(user);
         System.out.println("用户注册成功！");
         session.setAttribute("user", reg);
-        return "redirect:/user/tomain";
+        return "regOk";
     }
 
     @RequestMapping("tomain")

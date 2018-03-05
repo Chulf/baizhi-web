@@ -22,15 +22,15 @@
     <form role="form" action="${pageContext.request.contextPath}/user/login.do" method="post" id="log">
         <div class="form-group">
             <label for="username">${requestScope.contents[2]}</label>
-            <input class="form-control" id="username" name="username"
+            <input class="form-control" id="usernameForLog" name="username"
                    onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
         </div>
         <div class="form-group">
             <label for="password">${requestScope.contents[3]}</label>
-            <input type="password" id="password" class="form-control" id="password" name="password">
+            <input type="password" id="passwordForLog" class="form-control" id="password" name="password">
         </div>
         <div class="modal-footer">
-            <input type="button" id="sbmt" class="btn btn-primary" value="${requestScope.contents[4]}">
+            <input type="button" id="sbmtForLog" class="btn btn-primary" value="${requestScope.contents[4]}">
         </div>
     </form>
 </div>
@@ -51,8 +51,8 @@
 
 
     function login() {
-        var username = $("#username").val();
-        var password = $("#password").val();
+        var username = $("#usernameForLog").val();
+        var password = $("#passwordForLog").val();
 
 
         $.ajax({
@@ -74,7 +74,7 @@
                         location.href = "${pageContext.request.contextPath}/user/tomain.do";
                     } else {
                         location = location;
-                    }
+                    } 
 
                 }
                 if (result == 'loginno') {
@@ -105,8 +105,8 @@
         ok1 = false;
         ok2 = false;
 
-        $("#sbmt").click(function () {
-            if ($("#username").val().length >= 3 && $("#username").val().length <= 12 && $("#username").val() != '') {
+        $("#sbmtForLog").click(function () {
+            if ($("#usernameForLog").val().length >= 3 && $("#usernameForLog").val().length <= 12 && $("#usernameForLog").val() != '') {
                 ok1 = true;
             } else {
                 if(${sessionScope.languageStatus eq '1'}){
@@ -117,7 +117,7 @@
                     alert("Der benutzername sollte zwischen A4 ein.")
                 }
             }
-            if ($("#password").val().length >= 6 && $("#password").val().length <= 20 && $("#password").val() != '') {
+            if ($("#passwordForLog").val().length >= 6 && $("#passwordForLog").val().length <= 20 && $("#passwordForLog").val() != '') {
                 ok2 = true;
             } else {
                 if(${sessionScope.languageStatus eq '1'}){

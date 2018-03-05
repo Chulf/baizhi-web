@@ -95,8 +95,9 @@ public class BaiZhiOrderController {
             order.setId(UUID.randomUUID().toString());
             order.setUserid(user.getId());
             order.setPrice(number);
-
-            service.insert(order);
+            //设置需求书为0代表没有上传需求书
+            order.setDemand("0");
+            
             String filename = file.getOriginalFilename();
             if(filename.length()>1) {
                 //代表用户上传了文件
@@ -119,6 +120,7 @@ public class BaiZhiOrderController {
                 bfile.setId(UUID.randomUUID().toString());
                 bfile.setUploadtime(new Date());
                 baiZhiFileService.insert(bfile);
+                order.setDemand("1");
             }
 
         } else {
@@ -126,7 +128,8 @@ public class BaiZhiOrderController {
             System.out.println("112312312312" + order);
             session.setAttribute("fileSession", file);
         }
-
+        service.insert(order);
+        
         return "redirect:/user/tomain";
     }
 
