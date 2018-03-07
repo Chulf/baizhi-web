@@ -98,7 +98,7 @@
                             test="${sessionScope.languageStatus eq '0'}">About us</c:if>
 
                         <c:if
-                            test="${sessionScope.languageStatus eq '2'}">Über Uns</c:if></a>
+                            test="${sessionScope.languageStatus eq '2'}">Über uns</c:if></a>
                     </li>
                     <li class="col-xs-4"><a data-toggle="modal" data-target="#langModal"><i class="iconfont icon-theearth2diqiu"></i><c:if
                             test="${sessionScope.languageStatus eq '1'}">语言选择</c:if>
