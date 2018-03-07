@@ -1,0 +1,5 @@
+.classpath
+.project
+.settings/
+target/
+/src/main/resources/com/baizhi/properties/jdbc.properties
