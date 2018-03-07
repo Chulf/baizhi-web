@@ -112,9 +112,9 @@
                 if(${sessionScope.languageStatus eq '1'}){
                     alert("用户名应该为3-20位之间!");
                 }else if(${sessionScope.languageStatus eq '0'}){
-                    alert("The username should be between 3-20!")
+                    alert("The username should be between 3-20 characters!")
                 }else{
-                    alert("Der benutzername sollte zwischen A4 ein.")
+                    alert("Der Benutzername sollte zwischen 6-20 Zeichen lang sein.")
                 }
             }
             if ($("#passwordForLog").val().length >= 6 && $("#passwordForLog").val().length <= 20 && $("#passwordForLog").val() != '') {
@@ -123,9 +123,9 @@
                 if(${sessionScope.languageStatus eq '1'}){
                     alert("密码应该为6-20位之间!");
                 }else if(${sessionScope.languageStatus eq '0'}){
-                    alert("The password should be between 6-20 bits！")
+                    alert("The password must be between 6-20 characters！")
                 }else{
-                    alert("Das passwort sollte Platz für den 6 - 20.")
+                    alert("Das Passwort sollte zwischen 6-20 Zeichen lang sein!")
                 }
             }
             if (${empty token}) {

@@ -304,10 +304,10 @@
                             alert("请先完成登录！");
                         }
                         if (${sessionScope.languageStatus=="2"}) {
-                            alert("Bitte vervollständigen die anmelden.");
+                            alert("Bitte loggen Sie sich vor der Bestellung ein!");
                         }
                         if (${sessionScope.languageStatus=="0"}){
-                            alert("Please complete the login first!");
+                            alert("Please login before submit order!");
                         }
                     }
                 }
