@@ -14,7 +14,6 @@ public class BaiZhiPageController {
     public String changeStatus(HttpSession session, HttpServletRequest req,String status){
         String str = req.getHeader("Referer");
         String[] path = str.split("/");
-        String string = path[path.length-2];
         String pageName = path[path.length-1];
         if(status.equals("0")){
             session.setAttribute("languageStatus","0");
@@ -23,7 +22,8 @@ public class BaiZhiPageController {
         }else if(status.equals("2")){
             session.setAttribute("languageStatus","2");
         }
-        if(pageName.equals("main.jsp")) {
+        
+        if(pageName.equals("main.jsp") || str.endsWith(".com/") || str.endsWith(".cn/")) {
               str="/user/tomain";        
         }
         String url = "redirect:"+str;
