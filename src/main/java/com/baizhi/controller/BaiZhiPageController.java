@@ -23,9 +23,8 @@ public class BaiZhiPageController {
         }else if(status.equals("2")){
             session.setAttribute("languageStatus","2");
         }
-        if(pageName.equals("baizhiweb")) {
-            string = "user";
-            pageName = "tologin";
+        if(pageName.equals("main.jsp")) {
+              str="/user/tomain";        
         }
         String url = "redirect:"+str;
         return url;
