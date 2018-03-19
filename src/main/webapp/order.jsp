@@ -230,6 +230,10 @@
         var type = $("#type").val();
         var number = $("#number").val();
         var demand = $("#demand").val();
+        
+        if(type == "3"){
+        	number = 500
+        }
         //alert(type);
         $.ajax({
                 type: "post",
