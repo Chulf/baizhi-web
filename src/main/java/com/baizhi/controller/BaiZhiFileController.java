@@ -48,18 +48,19 @@ public class BaiZhiFileController {
 		request.setAttribute("contents",contents);
 		return "/about";
 	}
+        
 
 
-	@RequestMapping("tohow")
-	public String tohow(HttpServletRequest request){
+	@RequestMapping("toimprint")
+	public String toimprint(HttpServletRequest request){
 		String status = (String) request.getSession().getAttribute("languageStatus");
 		if(status == null){
 			status = "0";
 		}
-		String content = baiZhiPageService.queryContentByPageNameAndStatus("how.jsp", status);
+		String content = baiZhiPageService.queryContentByPageNameAndStatus("imprint.jsp", status);
 		String[] contents = content.split("_");
 		request.setAttribute("contents",contents);
-		return "/how";
+		return "/imprint";
 	}
 
 

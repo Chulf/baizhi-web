@@ -68,7 +68,7 @@
                             test="${sessionScope.languageStatus eq '0'}">About us</c:if>
 
                         <c:if
-                                test="${sessionScope.languageStatus eq '2'}">Über Uns</c:if></a>
+                                test="${sessionScope.languageStatus eq '2'}">Impressum</c:if></a>
                         </a>
                     </li>
 

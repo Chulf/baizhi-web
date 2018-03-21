@@ -98,7 +98,7 @@
                             test="${sessionScope.languageStatus eq '0'}">About us</c:if>
 
                         <c:if
-                            test="${sessionScope.languageStatus eq '2'}">Über uns</c:if></a>
+                            test="${sessionScope.languageStatus eq '2'}">Impressum</c:if></a>
                     </li>
                     <li class="col-xs-4"><a data-toggle="modal" data-target="#langModal"><i class="iconfont icon-theearth2diqiu"></i><c:if
                             test="${sessionScope.languageStatus eq '1'}">语言选择</c:if>
@@ -112,7 +112,7 @@
                 } else if (${sessionScope.languageStatus eq '0'}) {
                     alert('You have been logged in!')
                 } else {
-                    alert('Sie Sind angemeldet.')
+                    alert('Sie sind angemeldet.')
                 }"</c:if>><i class="iconfont icon-login"></i><c:if
                             test="${sessionScope.languageStatus eq '1'}">用户登录</c:if>
                         <c:if
@@ -125,7 +125,7 @@
                 } else if (${sessionScope.languageStatus eq '0'}) {
                     alert('You have been logged in!')
                 } else {
-                    alert('Sie Sind angemeldet.')
+                    alert('Sie sind angemeldet.')
                 }"</c:if>><i class="iconfont icon-register-o"></i><c:if
                             test="${sessionScope.languageStatus eq '1'}">用户注册</c:if>
                         <c:if
