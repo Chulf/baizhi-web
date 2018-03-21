@@ -57,9 +57,9 @@ public class BaiZhiFileController {
 		if(status == null){
 			status = "0";
 		}
-		String content = baiZhiPageService.queryContentByPageNameAndStatus("imprint.jsp", status);
-		String[] contents = content.split("_");
-		request.setAttribute("contents",contents);
+		//String content = baiZhiPageService.queryContentByPageNameAndStatus("imprint.jsp", status);
+		//String[] contents = content.split("_");
+		//request.setAttribute("contents",contents);
 		return "/imprint";
 	}
 
