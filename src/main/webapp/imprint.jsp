@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
     <head>
-        <title>Title</title>
+        <title>Impressum</title>
     </head>
     <body>
         <jsp:include page="top.jsp"/>
@@ -26,32 +26,22 @@
                 <div class="col-md-6 col-xs-12 hidden-xs" style="height:540px">
                     <h1 class="page-header" style="">Impressum</h1>
                     <h4 style="text-shadow:4px 4px 4px #999">
-                        Anbieter: </br>
-
-                        Max Mustermann </br>
-                        Musterstra?e 12</br>
-                        12345 Berlin</br></br>
-
+                        
+                        </br>
                         Kontakt:</br>
 
-                        Telefon: 030/12345678</br>
-                        Telefax: 030/12345679</br>
-                        e-Mail: e-Mail@mustermann.de</br>
-                        Website: www.mustermann.de</br></br>
+                        Telefon: 049 69 15619300</br>
+                        e-Mail: contact@mainriversoft.com</br>
+                        Website: www.mainriversoft.com</br></br>
 
-                        ##Bei redaktionellen Inhalten zusätzlich:##</br>
-
+                        </br>
                         Verantwortlich nach § 6 Abs.2 MDStV</br>
 
-                        Paul Schreiber</br>
-                        Redakteur Hardware und Software </br>
-                        Ahornallee 1 </br>
-                        12345 Berlin</br></br>
+                        Vertreten durch Minhong Wang </br></br>
 
-                        Registergericht: AG Berlin</br>
-                        HRB-Nummer: 54321</br>
-                        Umsatzsteueridentifikationsnummer: 123456789</br>
-                        Nennung des vertretungsberechtigten Geschäftsführer einer GmbH</br>
+                        St.-Nr. 1387967987 </br>
+                        USt-IdNr. DE298907540</br>
+                        </br>
                     </h4>
                 </div>
                 <div class="col-md-6 col-xs-12 visible-xs-block">

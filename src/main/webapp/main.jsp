@@ -84,21 +84,20 @@
                         <c:if
                             test="${sessionScope.languageStatus eq '0'}">How it works</c:if>
                         <c:if
-                            test="${sessionScope.languageStatus eq '2'}">Wie es funktioniert</c:if>
+                            test="${sessionScope.languageStatus eq '2'}">Anleitung</c:if>
                         </a></li>
                     <li class="col-xs-4"><a href="${pageContext.request.contextPath}/order/toorder"><i class="iconfont icon-xiangmu1"></i><c:if
                             test="${sessionScope.languageStatus eq '1'}">定制软件</c:if>
                         <c:if
                             test="${sessionScope.languageStatus eq '0'}">Pricing</c:if>
+                            <c:if
+                                test="${sessionScope.languageStatus eq '2'}">Preisgestaltung</c:if></a></li>
+                    <li class="col-xs-4"><a href="${pageContext.request.contextPath}/file/toabout"><i class="iconfont icon-aboutus"></i><c:if
+                                test="${sessionScope.languageStatus eq '1'}">关于我们</c:if><c:if
+                                test="${sessionScope.languageStatus eq '0'}">About us</c:if>
 
                         <c:if
-                            test="${sessionScope.languageStatus eq '2'}">Preisgestaltung</c:if></a></li>
-                <li class="col-xs-4"><a href="${pageContext.request.contextPath}/file/toabout"><i class="iconfont icon-aboutus"></i><c:if
-                            test="${sessionScope.languageStatus eq '1'}">关于我们</c:if><c:if
-                            test="${sessionScope.languageStatus eq '0'}">About us</c:if>
-
-                        <c:if
-                            test="${sessionScope.languageStatus eq '2'}">Impressum</c:if></a>
+                            test="${sessionScope.languageStatus eq '2'}">Über uns</c:if></a>
                     </li>
                     <li class="col-xs-4"><a data-toggle="modal" data-target="#langModal"><i class="iconfont icon-theearth2diqiu"></i><c:if
                             test="${sessionScope.languageStatus eq '1'}">语言选择</c:if>
@@ -107,26 +106,26 @@
                         <c:if
                             test="${sessionScope.languageStatus eq '2'}">Sprache</c:if></a></li>
                 <li class="col-xs-4"><a href="javascript:" <c:if test="${sessionScope.user == null}">data-toggle="modal" data-target="#login-modal"</c:if><c:if test="${sessionScope.user != null}">onclick="
-                if (${sessionScope.languageStatus eq '1'}) {
-                    alert('您已登录!');
-                } else if (${sessionScope.languageStatus eq '0'}) {
-                    alert('You have been logged in!')
-                } else {
-                    alert('Sie sind angemeldet.')
-                }"</c:if>><i class="iconfont icon-login"></i><c:if
+                        if (${sessionScope.languageStatus eq '1'}) {
+                            alert('您已登录!');
+                        } else if (${sessionScope.languageStatus eq '0'}) {
+                            alert('You have been logged in!')
+                        } else {
+                            alert('Sie sind angemeldet.')
+                        }"</c:if>><i class="iconfont icon-login"></i><c:if
                             test="${sessionScope.languageStatus eq '1'}">用户登录</c:if>
                         <c:if
                             test="${sessionScope.languageStatus eq '0'}">Log in</c:if>
                         <c:if
                             test="${sessionScope.languageStatus eq '2'}">Einloggen</c:if></a></li>
                 <li class="col-xs-4"><a href="" <c:if test="${sessionScope.user ==null}">data-toggle="modal" data-target="#reg-modal"</c:if><c:if test="${sessionScope.user != null}">onclick="
-                if (${sessionScope.languageStatus eq '1'}) {
-                    alert('您已登录!');
-                } else if (${sessionScope.languageStatus eq '0'}) {
-                    alert('You have been logged in!')
-                } else {
-                    alert('Sie sind angemeldet.')
-                }"</c:if>><i class="iconfont icon-register-o"></i><c:if
+                        if (${sessionScope.languageStatus eq '1'}) {
+                            alert('您已登录!');
+                        } else if (${sessionScope.languageStatus eq '0'}) {
+                            alert('You have been logged in!')
+                        } else {
+                            alert('Sie sind angemeldet.')
+                        }"</c:if>><i class="iconfont icon-register-o"></i><c:if
                             test="${sessionScope.languageStatus eq '1'}">用户注册</c:if>
                         <c:if
                             test="${sessionScope.languageStatus eq '0'}">Register</c:if>
@@ -184,9 +183,9 @@
                                         case "true":
                                             u = !0;
                                             break;
-                                            case "false":
+                                        case "false":
                                             u = !1
-                                        }
+                                    }
                                     a[c] = u
                                 }
                             });

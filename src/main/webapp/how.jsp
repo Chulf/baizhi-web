@@ -11,7 +11,6 @@
 <html>
     <head>
         <title>How it works?</title>
-
     </head>
     <body>
         <jsp:include page="top.jsp"/>
