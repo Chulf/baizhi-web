@@ -50,7 +50,7 @@
 
                         Telefon: 049 69 15619300</br>
                         e-Mail: contact@mainriversoft.com</br>
-                        Website: www.mainriversoft.com</br></br>
+                        Website: www.mainriversoft.com</br>
 
                         </br>
                         Verantwortlich nach § 6 Abs.2 MDStV</br>
