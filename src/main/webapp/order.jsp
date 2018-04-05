@@ -257,7 +257,7 @@
                 alert("文档描述必须大于5个字！");
             }
             if (${sessionScope.languageStatus=="2"}) {
-                alert("Beschreibung der Dokumentation muss größer ALS fünf Worte.");
+                alert("Beschreibung der Dokumentation muss größer als fünf Worte.");
             }
             if (${sessionScope.languageStatus=="0"}) {
                 alert("The document description must be more than 5 words!");
