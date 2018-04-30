@@ -77,7 +77,7 @@ public class BaiZhiOrderController {
     String getPrice(BaiZhiOrder order, HttpSession session, HttpServletResponse response) {
 
         response.setContentType("text/");
-        Double price = service.getPrice(order);
+        Integer price = service.getPrice(order).intValue();
         String statu = (String) session.getAttribute("languageStatus");
         if ("1".equals(statu)) return String.valueOf(price) + "EUR(不含增值税)";
         else if ("2".equals(statu)) return String.valueOf(price) + "EUR(ohne Mwst)";
@@ -151,8 +151,8 @@ public class BaiZhiOrderController {
         String statu = (String) session.getAttribute("languageStatus");
         if ("1".equals(statu)) return "订单已经成功生成，稍后我们会有工作人员和您联系进一步沟通关于软件预定的情况！";
         else if ("2".equals(statu))
-            return "Bestellungen sind erfolgreich erzeugt, auf die WIR später wird personal und " +
-                    "Kontakt MIT Ihnen die weitere Kommunikation über die software vorgegebenen Situation!";
+            return "Bestellungen sind erfolgreich erzeugt, auf die Wir später wird personal und " +
+                    "Kontakt mit Ihnen die weitere Kommunikation über die software vorgegebenen Situation!";
         return "The order has been successfully generated, and later we will have the staff to contact you " +
                 "to further communicate about the software reservation";
     }
