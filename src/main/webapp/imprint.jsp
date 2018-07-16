@@ -69,7 +69,7 @@
                             </br>
                             Verantwortlich nach § 6 Abs.2 MDStV</br>
 
-                            Vertreten durch Minhong Wang </br></br>
+                            Vertreten durch  Wang Yan </br></br>
 
                             St.-Nr. 1387967987 </br>
                             USt-IdNr. DE298907540</br>
@@ -79,11 +79,11 @@
                 %>
 
 
-                <%
-					if (session.getAttribute("languageStatus").equals("1")) {
-				%>
-                    <h1 class="page-header" style="">版权</h1>
-                        <h4 style="text-shadow:4px 4px 4px #999">
+                <c:set var = "languageStatus" scope = "session" value = "${sessionScope.languageStatus}"/>
+
+                <c:if test = "${languageStatus eq '1'}">
+                    <h1 class="page-header" style="">版权所有</h1>
+                    <h4 style="text-shadow:4px 4px 4px #999">
                             </br>联系方式:</br>
 
                             电话: 049 69 15619300</br>
@@ -98,11 +98,8 @@
                             St.-Nr. 1387967987 </br>
                             USt-IdNr. DE298907540</br>
                             </br>
-                        </h4>
-				<% }
-                %>
-
-
+                    </h4>
+				</c:if>
 
 
 
