@@ -72,12 +72,13 @@
                                     </a>
                                 </li>
 
-                            <c:if
-                                test="${sessionScope.languageStatus eq '2'}">
-                                <li><a href="${pageContext.request.contextPath}/file/toimprint">Impressum</a>
+                                <li><a href="${pageContext.request.contextPath}/file/toimprint"><c:if
+                                    test="${sessionScope.languageStatus eq '1'}">版权所有</c:if><c:if
+                                    test="${sessionScope.languageStatus eq '0'}">Imprint</c:if>
+                                    <c:if
+                                        test="${sessionScope.languageStatus eq '2'}">Impressum</c:if></a>
                                     </a>
                                 </li>
-                            </c:if>
 
                             <li role="presentation" class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
