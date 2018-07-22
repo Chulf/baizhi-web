@@ -28,78 +28,85 @@
 
 
 
-                <%
-					if (session.getAttribute("languageStatus").equals("0")) {
-				%>
-                      <h1 class="page-header" style="">Imprint</h1>
-                      <h4 style="text-shadow:4px 4px 4px #999">
+                    <%
+                        if (session.getAttribute("languageStatus").equals("0")) {
+                    %>
+                    <h1 class="page-header" style="">Imprint</h1>
+                    <h4 style="text-shadow:4px 4px 4px #999">
 
-                          </br>Contact:</br>
+                        </br>Contact:</br>
 
-                           Telephone: 049 69 15619300</br>
-                           e-Mail: contact@mainriversoft.com</br>
-                           Website: www.mainriversoft.com</br></br>
+                        Telephone: 049 69 15619300</br>
+                        e-Mail: contact@mainriversoft.com</br>
+                        Website: www.mainriversoft.com</br></br>
 
-                           </br>
-                           According to § 6 Abs.2 MDStV</br>
+                        </br>
+                        According to § 6 Abs.2 MDStV</br>
 
-                           Responsible Person  WangYan </br></br>
+                        Responsible Person  WangYan </br></br>
 
-                           St.-Nr. 1387967987 </br>
-                           USt-IdNr. DE298907540</br>
-                           </br>
-                      </h4>
-				<% }
-                %>
-
-
-                <%
-					if (session.getAttribute("languageStatus").equals("2")) {
-				%>
-
-                        <h1 class="page-header" style="">Impressum</h1>
-                        <h4 style="text-shadow:4px 4px 4px #999">
-
-                            </br>Kontakt:</br>
-
-                            Telefon: 049 69 15619300</br>
-                            e-Mail: contact@mainriversoft.com</br>
-                            Website: www.mainriversoft.com</br></br>
-
-                            </br>
-                            Verantwortlich nach § 6 Abs.2 MDStV</br>
-
-                            Vertreten durch  WangYan </br></br>
-
-                            St.-Nr. 1387967987 </br>
-                            USt-IdNr. DE298907540</br>
-                            </br>
-                        </h4>
-				<% }
-                %>
+                        St.-Nr. 1387967987 </br>
+                        USt-IdNr. DE298907540</br>
+                        </br>
+                    </h4>
+                    <% }
+                    %>
 
 
-                <c:set var = "languageStatus" scope = "session" value = "${sessionScope.languageStatus}"/>
+                    <%
+                        if (session.getAttribute("languageStatus").equals("2")) {
+                    %>
 
-                <c:if test = "${languageStatus eq '1'}">
+                    <h1 class="page-header" style="">Impressum</h1>
+                    <h4 style="text-shadow:4px 4px 4px #999">
+
+                        </br>Kontakt:</br>
+
+                        Telefon: 049 69 15619300</br>
+                        e-Mail: contact@mainriversoft.com</br>
+                        Website: www.mainriversoft.com</br></br>
+
+                        </br>
+                        Verantwortlich nach § 6 Abs.2 MDStV</br>
+
+                        Vertreten durch  WangYan </br></br>
+
+                        St.-Nr. 1387967987 </br>
+                        USt-IdNr. DE298907540</br>
+                        </br>
+                    </h4>
+                    <% }
+                    %>
+
+
+                <!--c:set var = "languageStatus" scope = "session" value = "${sessionScope.languageStatus}"/>
+                <c:if test = "${languageStatus eq '1'}"-->
+
+                    <%
+                        if (session.getAttribute("languageStatus").equals("1")) {
+                    %>
+
                     <h1 class="page-header" style="">版权所有</h1>
                     <h4 style="text-shadow:4px 4px 4px #999">
-                            </br>联系方式:</br>
+                        </br>联系方式:</br>
 
-                            电话: 049 69 15619300</br>
-                            电子邮箱: contact@mainriversoft.com</br>
-                            网站地址: www.mainriversoft.com</br></br>
+                        电话: 049 69 15619300</br>
+                        电子邮箱: contact@mainriversoft.com</br>
+                        网站地址: www.mainriversoft.com</br></br>
 
-                            </br>
-                            根据法律条款 § 6 Abs.2 MDStV</br>
+                        </br>
+                        根据法律条款 § 6 Abs.2 MDStV</br>
 
-                            负责人 WangYan </br></br>
+                        负责人 WangYan </br></br>
 
-                            St.-Nr. 1387967987 </br>
-                            USt-IdNr. DE298907540</br>
-                            </br>
+                        St.-Nr. 1387967987 </br>
+                        USt-IdNr. DE298907540</br>
+                        </br>
                     </h4>
-				</c:if>
+                    <%
+                        }
+                    %>
+                    <!--/c:if-->
 
 
 
@@ -109,55 +116,55 @@
 
                 <div class="col-md-6 col-xs-12 visible-xs-block">
 
-                <%
-					if (session.getAttribute("languageStatus").equals("0")) {
-				%>
-                      <h1 class="page-header" style="">Imprint</h1>
-                      <h4 style="text-shadow:4px 4px 4px #999">
+                    <%
+                        if (session.getAttribute("languageStatus").equals("0")) {
+                    %>
+                    <h1 class="page-header" style="">Imprint</h1>
+                    <h4 style="text-shadow:4px 4px 4px #999">
 
-                          </br>Contact:</br>
+                        </br>Contact:</br>
 
-                           Telephone: 049 69 15619300</br>
-                           e-Mail: contact@mainriversoft.com</br>
-                           Website: www.mainriversoft.com</br></br>
+                        Telephone: 049 69 15619300</br>
+                        e-Mail: contact@mainriversoft.com</br>
+                        Website: www.mainriversoft.com</br></br>
 
-                           </br>
-                           According to § 6 Abs.2 MDStV</br>
+                        </br>
+                        According to § 6 Abs.2 MDStV</br>
 
-                           Responsible Person  WangYan </br></br>
+                        Responsible Person  WangYan </br></br>
 
-                           St.-Nr. 1387967987 </br>
-                           USt-IdNr. DE298907540</br>
-                           </br>
-                      </h4>
-				<% }
-                %>
-                <%
-					if (session.getAttribute("languageStatus").equals("1")) {
-				%>
+                        St.-Nr. 1387967987 </br>
+                        USt-IdNr. DE298907540</br>
+                        </br>
+                    </h4>
+                    <% }
+                    %>
+                    <%
+                        if (session.getAttribute("languageStatus").equals("1")) {
+                    %>
                     <h1 class="page-header" style="">版权所有</h1>
-                        <h4 style="text-shadow:4px 4px 4px #999">
-                            </br>联系方式:</br>
+                    <h4 style="text-shadow:4px 4px 4px #999">
+                        </br>联系方式:</br>
 
-                            电话: 049 69 15619300</br>
-                            电子邮箱: contact@mainriversoft.com</br>
-                            网站地址: www.mainriversoft.com</br></br>
+                        电话: 049 69 15619300</br>
+                        电子邮箱: contact@mainriversoft.com</br>
+                        网站地址: www.mainriversoft.com</br></br>
 
-                            </br>
-                            根据法律条款 § 6 Abs.2 MDStV</br>
+                        </br>
+                        根据法律条款 § 6 Abs.2 MDStV</br>
 
-                            负责人 WangYan </br></br>
+                        负责人 WangYan </br></br>
 
-                            St.-Nr. 1387967987 </br>
-                            USt-IdNr. DE298907540</br>
-                            </br>
-                        </h4>
-				<% }
-                %>
+                        St.-Nr. 1387967987 </br>
+                        USt-IdNr. DE298907540</br>
+                        </br>
+                    </h4>
+                    <% }
+                    %>
 
-                <%
- 					if (session.getAttribute("languageStatus").equals("2")) {
- 				%>
+                    <%
+                        if (session.getAttribute("languageStatus").equals("2")) {
+                    %>
                     <h1 class="page-header" style="">Impressum</h1>
                     <h4 style="text-shadow:4px 4px 4px #999">
                         </br>Kontakt:</br>
@@ -175,8 +182,8 @@
                         USt-IdNr. DE298907540</br>
                         </br>
                     </h4>
-	            <% }
-                %>
+                    <% }
+                    %>
 
                 </div>
             </div>
